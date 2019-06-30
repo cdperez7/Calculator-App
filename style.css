@@ -8,7 +8,8 @@ body{
        -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+                                  supported by Chrome and Opera */                                  
+    background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/9XBJDF8/matrix-rain-background_455u6w8pl__F0000.png");
 }
 
 .calc-btn{
@@ -70,6 +71,7 @@ body{
 h1{
     text-align: center;
     margin-top: 50px;
+    color: yellow;
 }
 
 #calc-equals{
