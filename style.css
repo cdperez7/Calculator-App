@@ -1,5 +1,7 @@
-body{
+@import url('https://fonts.googleapis.com/css?family=Roboto:100&display=swap');
 
+body{
+    font-family: 'Roboto', sans-serif;
 }
 
 .calc-btn{
@@ -25,17 +27,17 @@ body{
     width: 200px;
 }
 
-.columm{
+.column{
     display: table-cell;
 }
 
 #calc-zero{
-    width: 98.66666667px;
+    width: 51.66666667px;
     border-radius: 0 0 0 7px;
 }
 
 #calc-clear{
-    width: 98.66666667px;
+    width: 51.66666667px;
 }
 
 #calc-display-val{
@@ -53,7 +55,7 @@ body{
     border-radius: 7px 7px 0 0;
 }
 
-#calc-btn-operator{
+.calc-btn-operator{
     background-color: orange;
     color: white;
 }
@@ -65,4 +67,8 @@ h1{
 
 #calc-equals{
     border-radius: 0 0 7px 0;
+}
+
+#calc-parent{
+    margin-left: calc(50% - 100px);
 }
