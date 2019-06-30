@@ -95,13 +95,13 @@
         }
 
         //Operator functionality using switch 
-        var performOperation = () => {
+        var performOperation = (clickObj) => {
             var operator = clickObj.target.innerText;
 
             switch (operator) {
                 case '+':
                     pendingVal = displayVal;
-                    displayVal = 0;
+                    displayVal = '0';
                     displayValElement.innerText = displayVal;
                     evalStringArray.push(pendingVal);
                     evalStringArray.push('+')
@@ -109,7 +109,7 @@
 
                 case '-':
                     pendingVal = displayVal;
-                    displayVal = 0;
+                    displayVal = '0';
                     displayValElement.innerText = displayVal;
                     evalStringArray.push(pendingVal);
                     evalStringArray.push('-')
@@ -117,7 +117,7 @@
 
                 case 'x':
                     pendingVal = displayVal;
-                    displayVal = 0;
+                    displayVal = '0';
                     displayValElement.innerText = displayVal;
                     evalStringArray.push(pendingVal);
                     evalStringArray.push('*')
@@ -125,7 +125,7 @@
 
                 case '÷':
                     pendingVal = displayVal;
-                    displayVal = 0;
+                    displayVal = '0';
                     displayValElement.innerText = displayVal;
                     evalStringArray.push(pendingVal);
                     evalStringArray.push('/')
@@ -134,6 +134,9 @@
                 case '=':
                     evalStringArray.push(displayVal);
                     var evaluation = eval(evalStringArray.join(' '));
+                    displayVal = evaluation + '';
+                    displayValElement.innerText = displayVal;
+                    evalStringArray = [];
                     break;
 
                 default:
