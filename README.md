@@ -1,5 +1,7 @@
 # Calculator-App
 
+Link to calculator: https://cdperez7.github.io/Calculator-App/
+
 ![Calc2](https://i.imgur.com/K53V2cX.png)
 
 ### Features
